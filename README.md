@@ -146,8 +146,10 @@ Testear la opción -f con el comando ‘ulimit’.
 - Makefile
 
 ## Referencias
-[1] https://github.com/DaveGamble/cJSON 
+[1] https://github.com/DaveGamble/cJSON
+
 [2] https://cjson.docsforge.com/
+
 [3] Making The Best Use of C
  https://www.gnu.org/prep/standards/html_node/Writing-C.html
  
