@@ -84,6 +84,24 @@ Todo el código correspondiente a este paso debe ser compilado como una librerí
 <permits> <file type> <path to fd>
 ```
 
+## Step E: JSON format
+Este último punto consiste en agregar la **opción -j**, que puede ser combinada con cualquiera de los puntos anteriores, de tal manera que imprime la información en formato JSON. Por ejemplo para al llamar a **rdproc -j**, producirá una salida del siguiente estilo:
+
+
+```Shell
+{
+    "cpu_type": "GenuineIntel",
+    "cpu_model": "Intel(R) Core(TM) i7-4790K CPU @ 4.00GHz",
+    "kerner_version": "Linux pegaso 5.8.8-arch1-1",
+    "number_of_threads": 8
+    ....
+    ....
+}
+```
+
+Para esto utilice la librería de Dave Gamble que la puede encontrar en su repositorio de github junto con su documentación [1] [2]
+
+
 ### Testing
 1) Testear con un programa que abra un archivo y se quede en un loop infinito.
 2) Utilizando shell:
@@ -117,21 +135,23 @@ Testear la opción -f con el comando ‘ulimit’.
 - Se debe compilar el código con los flags de compilación: 
 > -Wall -Pedantic -Werror -Wextra -Wconversion -std=gnu11
 - Dividir el código en módulos de manera juiciosa.
-- Estilo de código[1].
+- Estilo de código[2].
 - Manejo de errores
 - El código no debe contener errores, ni warnings.
 - El código no debe contener errores de cppcheck.
 
 ### ¿Qué se debe Entregar?
-- README en formato Markdown[2], explicando modos de uso, ejemplos, y todo lo que crea necesario para que se entienda el trabajo.
+- README en formato Markdown[4], explicando modos de uso, ejemplos, y todo lo que crea necesario para que se entienda el trabajo.
 - Código (funcionando bajo las especificaciones dadas y bajo cualquier caso de test de parámetros de entrada).
 - Makefile
 
 ## Referencias
-[1] Making The Best Use of C
+[1] https://github.com/DaveGamble/cJSON 
+[2] https://cjson.docsforge.com/
+[3] Making The Best Use of C
  https://www.gnu.org/prep/standards/html_node/Writing-C.html
  
-[2] Sintaxis de escritura y formato básicos,
+[4] Sintaxis de escritura y formato básicos,
  https://docs.github.com/es/github/writing-on-github/basic-writing-and-formatting-syntax
 
 
